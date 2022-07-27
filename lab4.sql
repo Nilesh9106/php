@@ -31,3 +31,8 @@ CREATE TABLE sales_order_details(
     qty_disp number(8) ,
     product_rate number(10,2)
 );
+INSERT INTO sales_master (salesman_no,sal_name,ADDRESS1,ADDRESS2,CITY,PINCODE,STATE,sal_amt,tgt_to_get,ytd_sales,remarks) VALUES ('&salesman_no','&NAME','&ADDRESS1','&ADDRESS2','&CITY',&PINCODE,'&STATE',&sal_amt,&tgt_to_get,&ytd_sales,'&remarks');
+
+INSERT INTO SALES_ORDER (s_order_no,order_date,client_no,dely_add,salesman_no,dely_type,bill_yn,dely_date,order_status) VALUES ('&s_order_no','&order_date','&client_no','&dely_add','&salesman_no','&dely_type','&bill_yn','&dely_date','&order_status');
+
+
